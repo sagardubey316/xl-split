@@ -4,11 +4,35 @@
     <title>Upload CSV</title>
 </head>
 <body>
-    <h2>Upload CSV File</h2>
+    <h2>Upload CSV/Excel File</h2>
+    
     <form action="/" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept=".csv,.xlsx">
         <br><br>
         <input type="submit" value="Upload & Process">
     </form>
+
+    <hr>
+
+    <h3>Required Column Headers</h3>
+    <p>
+        Please make sure your file has the following headers in the first row:
+    </p>
+    <pre>
+    Source
+    Date Created
+    Client Name
+    Display Name
+    Phone Number
+    WhatsApp Number
+    Email
+    Notes
+    Follow Up
+    Groups
+    Total Activities
+    Last Activity
+    First Response (mins)
+    Client Reference ID
+    </pre>
 </body>
 </html>
