@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Processed Files</title>
+</head>
+<body>
+    <h2>Download Processed Files</h2>
+    <a href="{{ url_for('download_file', filename='file_home_loans.csv') }}">
+        <button>Download Home Loan Data</button>
+    </a>
+    <br><br>
+    <a href="{{ url_for('download_file', filename='file1.csv') }}">
+        <button>Download Non Home Loan Data</button>
+    </a>
+</body>
+</html>
